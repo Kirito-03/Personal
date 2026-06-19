@@ -1,70 +1,42 @@
-# Portafolio Profesional — Leonardo Junior Silva Saboya
+# ♠ KIRITO | Arquitectura Digital
 
-Portafolio web estático con estética **cyberpunk**, desarrollado en HTML, CSS y JavaScript vanilla. Listo para despliegue en **GitHub Pages**.
+Repositorio oficial de infraestructura frontal y portafolio interactivo. Diseñado bajo la estricta estética de "Aristocracia Oscura", con un enfoque absoluto en la privacidad, la elegancia paramétrica y la inmersión visual.
 
-## 🗂 Estructura de Directorios
+## 🏛️ Filosofía y Diseño
 
-```
-Portafolio Profesioal/
-├── index.html
+- **Anonimato Criptográfico:** Eliminación sistemática de vectores de contacto directo, sustituidos por un bloque estático simulando una clave pública PGP en el pie de página.
+- **Geometría WebGL:** Integración de un ecosistema volumétrico impulsado por **Three.js**. Renderizado en tiempo real de fragmentos de obsidiana y un sistema de partículas (brasas carmesí) sobre un lienzo espacial infinito.
+- **Micro-interacciones:** Físicas de suspensión y paralaje en la cámara operando mediante interpolaciones finas (`Math.sin()`, `lerp`) y transiciones por curvas `cubic-bezier` personalizadas, transmitiendo un peso arquitectónico en la interfaz.
+
+## ⚙️ Stack Tecnológico
+
+- **Estructura:** HTML5 Semántico
+- **Estilo:** Vanilla CSS (CSS Grid, Flexbox, Filtros de Cristal Oscuro)
+- **Motor Gráfico:** Three.js (r134 via CDN)
+- **Lógica:** Vanilla JavaScript (ES6+)
+
+## 📁 Arquitectura del Proyecto
+
+```text
+Portafolio/
+├── index.html          # Núcleo estructural y anclaje DOM
 ├── css/
-│   ├── reset.css        # CSS reset cross-browser
-│   ├── variables.css    # Design tokens (colores, fuentes, espaciado)
-│   ├── base.css         # Estilos globales, botones, badges, utilities
-│   ├── animations.css   # Glitch, scanlines, fade-in, skill bars
-│   ├── navbar.css       # Barra de navegación responsive
-│   ├── hero.css         # Sección hero con terminal widget
-│   ├── about.css        # Sección sobre mí
-│   ├── skills.css       # Habilidades con progress bars
-│   ├── projects.css     # Grid de proyectos con filtros
-│   └── contact.css      # Formulario + footer
+│   └── style.css       # Reglas de estilo, variables y media queries
 ├── js/
-│   ├── utils.js         # Helpers compartidos (DOM, Observer, throttle)
-│   ├── navbar.js        # Comportamiento navbar (scroll, mobile toggle)
-│   ├── typed.js         # Efecto typewriter sin librerías
-│   ├── counter.js       # Animación de contadores numéricos
-│   ├── skills.js        # Animación de barras de habilidades
-│   ├── projects.js      # Filtrado de tarjetas de proyectos
-│   ├── contact.js       # Validación y manejo del formulario
-│   └── main.js          # Punto de entrada y coordinación global
-└── assets/              # Directorio para imágenes y recursos futuros
+│   └── main.js         # Lógicas de renderizado WebGL, cámara y Preloader
+└── assets/             # Directorio designado para recursos estáticos
 ```
 
-## 🚀 Despliegue en GitHub Pages
+## 🚀 Despliegue
 
-1. Crear repositorio en GitHub (e.g., `lsilva-portfolio`)
-2. Subir todos los archivos
-3. Ir a **Settings → Pages → Source: Deploy from branch → main**
-4. Tu portafolio estará en: `https://tu-usuario.github.io/lsilva-portfolio/`
+Este proyecto está purgado de dependencias de compilación complejas y se encuentra optimizado para su entrega inmediata y segura a través de **GitHub Pages**.
 
-## 🎨 Paleta de Colores
+1. Dirigirse a los **Settings** del repositorio en GitHub.
+2. Seleccionar **Pages** en la barra lateral izquierda.
+3. En la sección **Build and deployment**, establecer *Source* en `Deploy from a branch`.
+4. Seleccionar la rama `main` y presionar Save.
 
-| Token | Valor | Uso |
-|---|---|---|
-| `--clr-bg-deep` | `#080a0f` | Fondo principal |
-| `--clr-accent` | `#e8153a` | Rojo vibrante — acento principal |
-| `--clr-accent2` | `#ff4060` | Rojo suave — hover/glitch |
-| `--clr-text-code` | `#63e2b7` | Verde terminal |
+El motor de GitHub orquestará automáticamente la entrega estática del entorno.
 
-## ✉ Formulario de Contacto
-
-El formulario está listo para conectarse a un servicio de backend. Edita `js/contact.js` y reemplaza el `await new Promise(...)` por:
-
-```js
-// Opción A: FormSubmit.co (gratis, sin backend)
-await fetch('https://formsubmit.co/tu@email.com', {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify(data),
-});
-
-// Opción B: Netlify Forms
-// Agrega `netlify` al elemento <form> en index.html
-```
-
-## 🛠 Tecnologías
-
-- HTML5 semántico
-- CSS3 vanilla (Custom Properties, Grid, Flexbox, Animations)
-- JavaScript ES6+ puro (sin frameworks)
-- Google Fonts: Orbitron · Rajdhani · Share Tech Mono
+---
+*Elegancia arquitectónica en código y sistemas. Especializado en infraestructuras resilientes y experiencias digitales inmersivas.*
