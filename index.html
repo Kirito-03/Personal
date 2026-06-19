@@ -3,13 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KIRITO | Desarrollador & SysAdmin</title>
+  <title>KIRITO | CORE ENGINEER</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <!-- Custom Cursor -->
+  <div id="custom-cursor-dot"></div>
+  <div id="custom-cursor-rhombus"></div>
+
+  <!-- Architectural Guides -->
+  <div class="guide-line guide-left"></div>
+  <div class="guide-line guide-right"></div>
+  <div class="guide-line guide-top"></div>
+  <div class="guide-line guide-bottom"></div>
+
   <!-- PRELOADER -->
   <div id="preloader">
     <div class="preloader-line"></div>
@@ -30,21 +40,20 @@
     <section id="hero" class="hero-section">
       <div class="hero-content">
         <h1 class="hero-title">KIRITO</h1>
-        <h2 class="hero-subtitle">DESARROLLADOR & ADMINISTRADOR DE SISTEMAS</h2>
+        <h2 class="hero-subtitle">CORE ENGINEER</h2>
         <div class="hero-separator"></div>
-        <p class="hero-description">Elegancia arquitectónica en código y sistemas. Especializado en infraestructuras resilientes y experiencias digitales inmersivas.</p>
-        <a href="#projects" class="btn-primary">EXPLORAR OBRA</a>
+        <a href="#stack" class="btn-primary">ESTADO ACTUAL</a>
       </div>
     </section>
 
     <!-- Core Stack Section -->
     <section id="stack" class="stack-section">
-      <div class="section-header">
+      <div class="section-header reveal-item">
         <h2 class="section-title">Infraestructura Núcleo</h2>
         <div class="title-accent"></div>
       </div>
       <div class="stack-grid">
-        <div class="stack-category">
+        <div class="stack-category reveal-item">
           <h3 class="stack-title">Lógicas</h3>
           <ul class="stack-list">
             <li>Python 3.12+</li>
@@ -52,7 +61,7 @@
             <li>C# / .NET Core</li>
           </ul>
         </div>
-        <div class="stack-category">
+        <div class="stack-category reveal-item" style="transition-delay: 0.1s;">
           <h3 class="stack-title">Entornos</h3>
           <ul class="stack-list">
             <li>Arch Linux / Debian</li>
@@ -60,7 +69,7 @@
             <li>Alpine Linux</li>
           </ul>
         </div>
-        <div class="stack-category">
+        <div class="stack-category reveal-item" style="transition-delay: 0.2s;">
           <h3 class="stack-title">Orquestación</h3>
           <ul class="stack-list">
             <li>Docker & Docker Compose</li>
@@ -73,9 +82,13 @@
 
     <!-- Projects Section -->
     <section id="projects" class="projects-section">
+      <div class="section-header reveal-item">
+        <h2 class="section-title">Obras Seleccionadas</h2>
+        <div class="title-accent"></div>
+      </div>
       <div class="projects-grid">
         <!-- Project 1 -->
-        <article class="project-card">
+        <article class="project-card reveal-item">
           <div class="card-inner">
             <div class="card-content">
               <span class="project-category">Desarrollo Web & Móvil</span>
@@ -93,7 +106,7 @@
         </article>
 
         <!-- Project 2 (Highlighted) -->
-        <article class="project-card highlight-card">
+        <article class="project-card highlight-card reveal-item" style="transition-delay: 0.1s;">
           <div class="card-inner">
             <div class="card-content">
               <span class="project-category">Experiencia Auditiva</span>
@@ -111,7 +124,7 @@
         </article>
 
         <!-- Project 3 -->
-        <article class="project-card">
+        <article class="project-card reveal-item" style="transition-delay: 0.2s;">
           <div class="card-inner">
             <div class="card-content">
               <span class="project-category">Game Development</span>
@@ -129,7 +142,7 @@
         </article>
 
         <!-- Project 4 -->
-        <article class="project-card">
+        <article class="project-card reveal-item">
           <div class="card-inner">
             <div class="card-content">
               <span class="project-category">Administración de Sistemas</span>
@@ -147,7 +160,7 @@
         </article>
 
         <!-- Project 5 -->
-        <article class="project-card">
+        <article class="project-card reveal-item" style="transition-delay: 0.1s;">
           <div class="card-inner">
             <div class="card-content">
               <span class="project-category">Infraestructura & Redes</span>
@@ -165,7 +178,7 @@
         </article>
 
         <!-- Project 6 -->
-        <article class="project-card">
+        <article class="project-card reveal-item" style="transition-delay: 0.2s;">
           <div class="card-inner">
             <div class="card-content">
               <span class="project-category">Herramientas & Productividad</span>
@@ -183,33 +196,11 @@
         </article>
       </div>
     </section>
-
-    <!-- Node Status Section -->
-    <section id="nodes" class="nodes-section">
-      <div class="section-header">
-        <h2 class="section-title">Estado de Nodos</h2>
-        <div class="title-accent"></div>
-      </div>
-      <div class="nodes-panel">
-        <div class="node-item">
-          <span class="node-name">Main.Proxy.Relay</span>
-          <span class="node-status">[OPERATIVO]</span>
-        </div>
-        <div class="node-item">
-          <span class="node-name">Auth.Service.Core</span>
-          <span class="node-status">[OPERATIVO]</span>
-        </div>
-        <div class="node-item">
-          <span class="node-name">Data.Vault.Primary</span>
-          <span class="node-status">[OPERATIVO]</span>
-        </div>
-      </div>
-    </section>
   </main>
 
   <!-- PGP Footer -->
   <footer class="footer">
-    <div class="footer-content">
+    <div class="footer-content reveal-item">
       <div class="pgp-block">
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
